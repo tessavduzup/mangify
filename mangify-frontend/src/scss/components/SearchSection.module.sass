@@ -1,0 +1,48 @@
+@import ../_base
+
+.section
+	position: relative
+	width: $section-container-width
+	margin: 0 auto
+	padding: $section-padding
+
+	border-radius: $section-border-radius
+	background-color: $white
+	.section__header
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding-bottom: 20px
+		.section__header__title
+			font-size: 24px
+			font-weight: 500
+		.section__header__search
+			display: flex
+			align-items: center
+			column-gap: 10px
+		.section__header__search_input
+			display: flex
+			align-items: center
+			position: relative
+			column-gap: 10px
+
+			padding: 10px
+
+			border: $input-border
+			border-radius: $input-border-radius
+
+			cursor: pointer
+			path
+				fill: $accent
+			.section__header__search_input_mark
+				position: absolute
+				top: 10px
+				right: 15px
+	.section__list
+		display: flex
+		flex-wrap: wrap
+		row-gap: $list-row-gap
+		column-gap: $list-col-gap
+		.section__list__notFound
+			font-size: 20px
+			margin: 200px auto
